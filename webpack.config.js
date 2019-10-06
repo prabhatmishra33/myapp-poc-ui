@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 // Try the environment variable, otherwise use root
-const ASSET_PATH = process.env.ASSET_PATH || 'https://github.com/prabhatmishra33/myapp-poc-ui/dist/';
+const ASSET_PATH = process.env.ASSET_PATH || 'https://github.com/prabhatmishra33/myapp-poc-ui/tree/master/dist/';
 console.log('ASSET_PATH : ',ASSET_PATH)
 
 // console.log(document.currentScript.src);
