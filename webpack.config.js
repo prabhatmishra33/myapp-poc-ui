@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var nodeExternals = require('webpack-node-externals');
 
 // Try the environment variable, otherwise use root
 const ASSET_PATH = process.env.ASSET_PATH || '/';
