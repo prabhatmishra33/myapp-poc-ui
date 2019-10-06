@@ -1,0 +1,53 @@
+{
+  "name": "myapp-poc-ui",
+  "version": "0.0.1",
+  "description": "A package for my app submodule",
+  "main": "dist/myapp-poc-ui.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "webpack",
+    "pretest": "npm run build",
+    "start": "npm run build"
+  },
+  "keywords": [
+    "submodule",
+    "UI",
+    "myapp"
+  ],
+  "license": "MIT",
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "app"
+    ],
+    "moduleNameMapper": {
+      ".*\\.(css|less|styl|scss|sass)$": "<rootDir>/mocks/cssModule.js",
+      ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/image.js"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "path": "^0.12.7",
+    "react": "15.4.1",
+    "react-dom": "15.4.1",
+    "react-loadable": "4.0.3"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.2.0",
+    "less-loader": "^5.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
