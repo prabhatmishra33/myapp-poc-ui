@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-class ForecastAdjustments extends React.Component { // eslint-disable-line react/prefer-stateless-function
+class HelloWorld extends React.Component { // eslint-disable-line react/prefer-stateless-function
     render() {
     console.log('In hellow world renderer');
       return (
@@ -12,4 +12,4 @@ class ForecastAdjustments extends React.Component { // eslint-disable-line react
     }
 }
 
-export default ForecastAdjustments;
+export default HelloWorld;
