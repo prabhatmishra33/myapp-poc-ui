@@ -15,6 +15,9 @@ module.exports = {
     libraryTarget: 'umd',
     publicPath: ASSET_PATH
   },
+  optimization: {
+    minimize: false
+  },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
