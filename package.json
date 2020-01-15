@@ -5,7 +5,7 @@
   "main": "dist/myapp-poc-ui.js",
   "scripts": {
     "test": "jest --coverage",
-    "build": "webpack -p",
+    "build": "webpack",
     "pretest": "npm run build",
     "start": "npm run build"
   },
